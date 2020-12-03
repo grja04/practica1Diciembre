@@ -1,6 +1,13 @@
+
+let userArray = []
+  
+
 document.getElementById("botonSecundario").addEventListener("click", () => {
 console.log("click")
 let name = document.getElementById("First-name").value
+if (name.length > 15) {
+    name = name.slice(0,15)+"..."
+}
 let lastName = document.getElementById("Last-name").value
 console.log(name, lastName)
 
